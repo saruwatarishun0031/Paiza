@@ -8,10 +8,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="SkillCheck\DRank\" />
-    <Folder Include="SkillCheck\CRank\" />
-    <Folder Include="SkillCheck\BRank\" />
-    <Folder Include="ExerciseBooks\" />
+    <Compile Remove="ExerciseBooks\**" />
+    <Compile Remove="SkillCheck\**" />
+    <EmbeddedResource Remove="ExerciseBooks\**" />
+    <EmbeddedResource Remove="SkillCheck\**" />
+    <None Remove="ExerciseBooks\**" />
+    <None Remove="SkillCheck\**" />
   </ItemGroup>
 
 </Project>
